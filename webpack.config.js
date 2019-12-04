@@ -28,6 +28,14 @@ module.exports = {
       {
         from: "./index.html",
         to: "./build/index.html"
+      },
+      {
+        from: "./libs/**",
+        to: "./build/"
+      },
+      {
+        from: "./imgs/**",
+        to: "./build/"
       }
     ])
   ],
