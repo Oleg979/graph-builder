@@ -1,9 +1,7 @@
-let activeBlock = null;
-let clickedBlock = null;
-
-let currentPage = "SETTINGS";
-
-let joins = [];
-let blockCounter = 0;
-
-let state;
+export default class State {
+  static activeBlock = null;
+  static clickedBlock = null;
+  static joins = [];
+  static blocks = [];
+  static blockCounter = 0;
+}

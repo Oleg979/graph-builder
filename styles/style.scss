@@ -1,39 +1,45 @@
-body {
-  background-color: lightgray;
-  height: -webkit-fill-available;
+html {
+  height: 100%;
+  width: 100%;
 
-  button {
-    margin-left: 10px;
-  }
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
 
-  nav {
-    z-index: 10;
-  }
+    button {
+      margin-left: 10px;
+    }
 
-  .card {
-    width: 20rem !important;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    nav {
+      z-index: 10;
+    }
 
-    cursor: move;
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-  }
+    .card {
+      width: 20rem !important;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
 
-  .dragging {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
-  }
+      cursor: move;
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
 
-  .inactive {
-    opacity: 0.5;
-  }
+    .dragging {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
 
-  button.invisible {
-    display: none;
+    .inactive {
+      opacity: 0.5;
+    }
+
+    button.invisible {
+      display: none;
+    }
   }
 }
