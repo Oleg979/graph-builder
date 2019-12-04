@@ -10,6 +10,7 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.13.0",

@@ -1,10 +1,10 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./entry.ts",
+  entry: ["./entry.ts", "./styles/style.scss"],
   output: {
-    filename: "app.js",
-    path: __dirname
+    filename: "./build/app.js"
   },
   module: {
     rules: [
@@ -22,7 +22,15 @@ module.exports = {
       }
     ]
   },
-  plugins: [new ExtractTextPlugin("./style.css")],
+  plugins: [
+    new ExtractTextPlugin("./build/style.css"),
+    new CopyWebpackPlugin([
+      {
+        from: "./index.html",
+        to: "./build/index.html"
+      }
+    ])
+  ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   }

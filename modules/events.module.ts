@@ -7,7 +7,10 @@ export const exportClickHandler = () => {
     encodeURIComponent(JSON.stringify(new State()));
   const downloadAnchorNode = document.createElement("a");
   downloadAnchorNode.setAttribute("href", dataStr);
-  downloadAnchorNode.setAttribute("download", "bot.json");
+  downloadAnchorNode.setAttribute(
+    "download",
+    `config-${new Date().toLocaleDateString()}.json`
+  );
   document.body.appendChild(downloadAnchorNode);
   downloadAnchorNode.click();
   downloadAnchorNode.remove();
